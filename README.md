@@ -2,6 +2,10 @@
 
 This project is a web-based data analysis portal built using Streamlit. It allows users to upload datasets, view basic statistics, filter data, and visualize data using various charts.
 
+## Example
+
+![Example Image](images/Image_Dataset.webp)
+
 ## Features
 
 1. **Upload Datasets**: Users can upload datasets in Excel or CSV format.
@@ -62,9 +66,6 @@ Before uploading your dataset, please ensure that it has undergone necessary dat
        categories.
 
 
-## Example
-
-![Example Image](images/Image_Dataset.webp)
 
 ## License
 
