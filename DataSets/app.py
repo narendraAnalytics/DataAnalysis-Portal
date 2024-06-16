@@ -9,6 +9,12 @@ from prophet import Prophet
 
 st.title("Data Analysis Portal")
 
+# Informative Note about Data Cleaning
+st.markdown("""
+### Important Note:
+Before uploading your dataset, please ensure that it has undergone necessary data cleaning and preprocessing steps. This includes handling missing values, removing duplicates, and ensuring that data types are correctly formatted. Clean and well-preprocessed data will lead to more accurate and meaningful analysis results.
+""")
+
 # File upload
 uploaded_file = st.file_uploader("Upload your dataset (Excel or CSV)", type=['csv', 'xlsx'])
 if uploaded_file:
@@ -87,6 +93,27 @@ if uploaded_file:
         pie_data = df[column].value_counts().reset_index()
         pie_data.columns = [column, 'count']
         fig = px.pie(pie_data, names=column, values='count', title=f'Pie Chart of {column}')
+        st.plotly_chart(fig)
+
+
+# 3D Scatter Plots
+    st.subheader("3D Scatter Plots")
+    st.markdown("**Useful for visualizing relationships between three variables.**")
+    if st.checkbox("Show 3D scatter plot"):
+        columns = st.multiselect("Select columns for 3D scatter plot", numeric_columns, default=numeric_columns[:3])
+        if len(columns) == 3:
+            fig = px.scatter_3d(df, x=columns[0], y=columns[1], z=columns[2], title="3D Scatter Plot")
+            st.plotly_chart(fig)
+        else:
+            st.error("Please select exactly three columns.")
+
+    # Bar Charts for Categorical Data
+    st.subheader("Bar Charts for Categorical Data")
+    if st.checkbox("Show bar chart"):
+        column = st.selectbox("Select column for bar chart", categorical_columns)
+        bar_data = df[column].value_counts().reset_index()
+        bar_data.columns = [column, 'count']
+        fig = px.bar(bar_data, x=column, y='count', title=f'Bar Chart of {column}')
         st.plotly_chart(fig)
 
 # To run the Streamlit app, use the command:

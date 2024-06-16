@@ -1,13 +1,14 @@
 # Data Analysis Portal
 
-This project is a web-based data analysis portal built using Streamlit. It allows users to upload datasets, view basic statistics, filter data, and generate forecasting models.
+This project is a web-based data analysis portal built using Streamlit. It allows users to upload datasets, view basic statistics, filter data, and visualize data using various charts.
 
 ## Features
 
 1. **Upload Datasets**: Users can upload datasets in Excel or CSV format.
 2. **Basic Statistics**: Display basic statistics such as mean, median, standard deviation, etc.
-3. **Correlation Heatmap**: Visualize correlations between different columns.
+3. **Correlation Heatmap**: Visualize correlations between different numeric columns.
 4. **Data Filtering**: Filter data based on user-selected criteria.
+5. **Forecasting Model**: Generate and display forecasting models using the Prophet library.
 
 ## Installation
 
@@ -39,6 +40,7 @@ This project is a web-based data analysis portal built using Streamlit. It allow
 2. **View Basic Statistics**: Check the box to display basic statistics.
 3. **Show Correlation Heatmap**: Check the box to visualize correlations.
 4. **Filter Data**: Use the filtering options to refine the dataset.
+5. **Generate Forecasting Model**: Select the columns for date and target values, then generate the forecasting model.
 
 ## Example
 
@@ -58,5 +60,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions or suggestions, feel free to open an issue or contact me at [your-email@example.com](mailto:your-email@example.com).
-
+If you have any questions or suggestions, feel free to open an issue or contact me at [narendra.insights@gmail.com](mailto:narendra.insights@gmail.com).
