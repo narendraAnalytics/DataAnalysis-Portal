@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sns
-from prophet import Prophet
 
 
 st.title("Data Analysis Portal")
