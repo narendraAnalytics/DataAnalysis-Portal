@@ -39,7 +39,6 @@ This project is a web-based data analysis portal built using Streamlit. It allow
 2. **View Basic Statistics**: Check the box to display basic statistics.
 3. **Show Correlation Heatmap**: Check the box to visualize correlations.
 4. **Filter Data**: Use the filtering options to refine the dataset.
-5. **Generate Forecasting Model**: Select the columns for date and target values, then generate the forecasting model.
 
 ## Example
 
