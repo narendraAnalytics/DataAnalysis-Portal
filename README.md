@@ -8,7 +8,6 @@ This project is a web-based data analysis portal built using Streamlit. It allow
 2. **Basic Statistics**: Display basic statistics such as mean, median, standard deviation, etc.
 3. **Correlation Heatmap**: Visualize correlations between different columns.
 4. **Data Filtering**: Filter data based on user-selected criteria.
-5. **Forecasting Model**: Generate and display forecasting models using the Prophet library.
 
 ## Installation
 
