@@ -64,7 +64,7 @@ Before uploading your dataset, please ensure that it has undergone necessary dat
 
 ## Example
 
-![Example Image](path/to/your/example-image.png)
+![Example Image](images/Image_Dataset.webp)
 
 ## License
 
