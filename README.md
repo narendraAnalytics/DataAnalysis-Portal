@@ -8,7 +8,19 @@ This project is a web-based data analysis portal built using Streamlit. It allow
 2. **Basic Statistics**: Display basic statistics such as mean, median, standard deviation, etc.
 3. **Correlation Heatmap**: Visualize correlations between different numeric columns.
 4. **Data Filtering**: Filter data based on user-selected criteria.
-5. **Forecasting Model**: Generate and display forecasting models using the Prophet library.
+5. **Data Visualization**:
+   - Histogram and density plots.
+   - Box plots.
+   - Scatter plots with regression lines.
+   - Pair plots.
+   - 3D scatter plots (Useful for visualizing relationships between three variables).
+   - Bar charts for categorical data.
+
+## Important Note
+
+Before uploading your dataset, please ensure that it has undergone necessary data cleaning and preprocessing steps. This includes handling missing values, removing duplicates, and ensuring that data types are correctly formatted. Clean and well-preprocessed data will lead to more accurate and meaningful analysis results.
+
+
 
 ## Installation
 
@@ -40,7 +52,15 @@ This project is a web-based data analysis portal built using Streamlit. It allow
 2. **View Basic Statistics**: Check the box to display basic statistics.
 3. **Show Correlation Heatmap**: Check the box to visualize correlations.
 4. **Filter Data**: Use the filtering options to refine the dataset.
-5. **Generate Forecasting Model**: Select the columns for date and target values, then generate the forecasting model.
+5. **Data Visualization**:
+   - **Histogram and Density Plots**: Select a numeric column to visualize its distribution.
+   - **Box Plots**: Select a numeric column to visualize its distribution and identify outliers.
+   - **Scatter Plots with Regression Lines**: Select two numeric columns to visualize their relationship.
+   - **Pair Plots**: Select multiple numeric columns to visualize relationships between them.
+   - **3D Scatter Plots**: Select three numeric columns to visualize relationships between them in 3D.
+   - **Bar Charts for Categorical Data**: Select a categorical column to visualize the distribution of 
+       categories.
+
 
 ## Example
 
